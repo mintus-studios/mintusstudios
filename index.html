@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diet Musik</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
         body, html {
             margin: 0;
             padding: 0;
@@ -28,14 +30,27 @@
             overflow: hidden;
         }
 
-        .video-background iframe {
+        .video-background video {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
 
         .buttons {
-            position: relative;
-            z-index: 1;
             text-align: center;
         }
 
@@ -49,18 +64,49 @@
             font-weight: bold;
             border-radius: 5px;
         }
+
+        /* Additional styles for responsiveness */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 3rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .button {
+                padding: 8px 16px;
+                margin: 5px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="video-background">
-        <iframe src="https://www.youtube.com/embed/CZqez2XaTVk?autoplay=1&mute=1&loop=1&playlist=CZqez2XaTVk&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&fs=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video autoplay muted loop>
+            <source src="Final_Mix_short_begin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-    <div class="buttons">
-        <a href="https://www.instagram.com/diet_musik?igsh=MXRrcGM4YjV6ODI3MQ==" class="button">Instagram</a>
-        <a href="mailto:mintusstudios@gmail.com" class="button">Email</a>
-        <a href="https://www.tiktok.com/@diet_musik?_t=8oNG30Z7B0y&_r=1" class="button">TikTok</a>
-        <a href="https://youtu.be/CZqez2XaTVk?si=gr_4hopH2m59Dq11" class="button">YouTube</a>
+    <div class="content">
+        <div class="title">diET</div>
+        <div class="buttons">
+            <a href="https://www.instagram.com/diet_musik?igsh=MXRrcGM4YjV6ODI3MQ==" class="button">Instagram</a>
+            <a href="mailto:mintusstudios@gmail.com" class="button">Email</a>
+            <a href="https://www.tiktok.com/@diet_musik?_t=8oNG30Z7B0y&_r=1" class="button">TikTok</a>
+            <a href="https://youtu.be/CZqez2XaTVk?si=gr_4hopH2m59Dq11" class="button">YouTube</a>
+        </div>
     </div>
 </body>
 </html>
