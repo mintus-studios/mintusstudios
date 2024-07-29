@@ -38,3 +38,80 @@
 
         .content {
             position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: yellow;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Additional styles for responsiveness */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 3rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .button {
+                padding: 8px 16px;
+                margin: 5px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video id="background-video" autoplay muted loop>
+            <source src="Final_Mix_short_begin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content">
+        <div class="title">diET</div>
+        <div class="buttons">
+            <a href="https://www.instagram.com/diet_musik?igsh=MXRrcGM4YjV6ODI3MQ==" class="button">Instagram</a>
+            <a href="mailto:mintusstudios@gmail.com" class="button">Email</a>
+            <a href="https://www.tiktok.com/@diet_musik?_t=8oNG30Z7B0y&_r=1" class="button">TikTok</a>
+            <a href="https://youtu.be/CZqez2XaTVk?si=gr_4hopH2m59Dq11" class="button">YouTube</a>
+        </div>
+    </div>
+
+    <script>
+        // Ensure the video is muted
+        document.getElementById('background-video').muted = true;
+    </script>
+</body>
+</html>
