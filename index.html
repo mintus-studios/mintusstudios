@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="video-background">
-        <video id="background-video" autoplay muted loop>
-            <source src="test.mp4" type="video/mp4" playsinline>
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>
@@ -26,7 +26,7 @@
 
     <script>
         // Ensure the video is muted
-        document.getElementById('background-video').muted = true;
+        document.querySelector('.background-video video').muted = true;
     </script>
 </body>
 </html>
