@@ -30,21 +30,23 @@ body, html {
     object-fit: cover;
 }
 
-.content {
+.overlay {
     position: relative;
     z-index: 1;
     text-align: center;
     color: white;
 }
 
-.title {
+.header h1 {
     font-family: 'Anton', sans-serif;
     font-size: 4rem;
     margin-bottom: 20px;
 }
 
 .buttons {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button {
@@ -56,11 +58,12 @@ body, html {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    font-family: Arial, sans-serif;
 }
 
 /* Additional styles for responsiveness */
 @media (max-width: 768px) {
-    .title {
+    .header h1 {
         font-size: 3rem;
     }
 
@@ -72,7 +75,7 @@ body, html {
 }
 
 @media (max-width: 480px) {
-    .title {
+    .header h1 {
         font-size: 2.5rem;
     }
 
