@@ -32,6 +32,8 @@ body {
     z-index: 1;
     text-align: center;
     color: white;
+    margin-top: 50vh; /* Verschiebt den Inhalt nach unten */
+    transform: translateY(-50%); /* Zentrale Ausrichtung trotz margin-top */
 }
 
 .title {
